@@ -1,0 +1,15 @@
+# The URL the site will be built for
+base_url = "https://nate.spot"
+compile_sass = false
+build_search_index = false
+
+title = "Nathan Heller"
+description = "A personal website"
+
+[extra]
+navbar = [
+    { name = "Blog", url = "/blog" },
+    { name = "Projects", url = "/projects" },
+    { name = "About", url = "/about" },
+    { name = "Contact", url = "/contact" }
+]

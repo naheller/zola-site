@@ -1,0 +1,142 @@
+:root {
+    color-scheme: light dark;
+
+    --lm-text: #463947;
+    --lm-bg: #e7e4e7;
+    --lm-bg-alt: #d7d0d7;
+    --lm-accent: #a89ea9;
+
+    --dm-text: #f1f3f3;
+    --dm-bg: #394447;
+    --dm-bg-alt: #22292b;
+    --dm-accent: #67787c;
+
+    --font-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+    --font-serif: ui-serif, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --font-monospace: ui-monospace, Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+}
+
+body {
+    font-size: 20px;
+    font-family: var(--font-serif);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    color: light-dark(var(--lm-text), var(--dm-text));
+    background-color: light-dark(var(--lm-bg), var(--dm-bg));
+    padding: 1rem;
+}
+
+main, header, footer {
+    padding: 0 2rem;
+}
+
+header, footer {
+    text-align: center;
+}
+
+footer {
+    margin-bottom: 1em;
+}
+
+nav a:not(:last-child) {
+    margin-right: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+article > h1 {
+    margin: 0;
+    font-size: 1.15em;
+}
+
+a {
+    color: light-dark(var(--lm-text), var(--dm-text));
+    text-underline-offset: 0.1em;
+}
+
+hr {
+    border: none;
+    height: 0.1em;
+    border-top: 0.1em solid light-dark(var(--lm-accent), var(--dm-accent));
+    background-color: light-dark(var(--lm-accent), var(--dm-accent));
+    margin: 2em 0;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.description {
+    font-style: italic;
+}
+
+.date, .description {
+    margin: 0.25em 0 0 0;
+}
+
+article > .date {
+    margin: 0;
+}
+
+.page-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-item > * {
+    display: block;
+    text-align: center;
+}
+
+.page-item:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.centered-blurb {
+    padding: 0 6em;
+    text-align: center;
+}
+
+pre, code {
+    font-family: var(--font-monospace);
+    font-size: 0.9em;
+    background-color: light-dark(var(--lm-bg-alt), var(--dm-bg-alt));
+}
+
+pre {
+    padding: 1em;
+    overflow-x: auto;
+}
+
+code {
+    padding: 0 0.25em;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding: 0.75em 1em;
+    border-left: 0.25em solid light-dark(var(--lm-accent), var(--dm-accent));
+    font-style: italic;
+}
+
+blockquote > p {
+    margin: 0;
+}
+
+ul, ol {
+    padding-inline-start: 1em;
+}
+
+@media (max-width: 700px) {
+    body {
+	font-size: 18px;
+    }
+
+    main, header, footer, .centered-blurb {
+	padding: 0;
+    }
+}

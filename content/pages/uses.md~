@@ -1,0 +1,56 @@
+---
+title: Uses
+description: Things that I use on a regular basis
+path: uses
+---
+Spoiler: It's mostly tech stuff
+
+## Hardware
+
+- Phone: Pixel 9
+- Laptop 1: Chuwi Minibook X N150
+- Laptop 2: Lenovo Thinkpad T14 Gen 1 (Intel)
+- E-reader: Kobo Libra 2
+- Earbuds: Apple AirPods Pro 2
+- Headphones: Sony WH-1000XM4
+
+## Software:
+
+Operating Systems:
+
+- Phone: GrapheneOS
+- Laptop 1: EndeavourOS (GNOME, Niri)
+- Laptop 2: EndeavourOS (KDE Plasma)
+
+Essentials:
+
+- Email: Fastmail
+- Password manager: 1Password
+- VPN: Mullvad
+- File transfer: LocalSend
+- File sync: Syncthing
+
+Desktop Utilities:
+
+- Browser: Brave
+- Text editor: Obsidian, Vim, Emacs
+- Code editor: Zed, Vim, Emacs
+- RSS reader: Newsflash (looking for an alternative)
+- Terminal emulator: Foot, KGX
+
+Mobile Utilities:
+
+- Browser: Vanadium
+- Music player: Musicolet
+- Podcast player: AntennaPod
+- Text editor: Obsidian
+- RSS reader: Capy Reader
+
+Services:
+
+- Music: Bandcamp
+- Radio: SomaFM, Radio Garden
+- Read-it-later: Instapaper
+- Library loans: Libby
+- Cloud storage: Filen.io
+- Cloud backup: Backblaze

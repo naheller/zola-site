@@ -1,0 +1,32 @@
+---
+title: About
+description: A few things about me and this site
+path: about
+---
+## In a few words
+
+I'm a guy on the internet
+
+## In a few more words
+
+<details>
+<summary>Click to expand</summary>
+
+As a pale dude who grew up in a beach town, I preferred the UV-free glow of a computer screen. My idea of an epic Saturday night was (and still is) a 12-hour LAN party.
+
+I came of age on AOL chat rooms and Battle.net lobbies, tinkering with my [Dell Dimension](https://en.wikipedia.org/wiki/Dell_Dimension) and zapping myself on its power supply.
+
+My first website was a collection of Flash games for my friends to play in computer class. All the fun sites were blocked by our school's firewall.
+
+I've been building web things ever since as a software engineer, but like many Millennials, I miss the simple days of the [small web](https://neustadt.fr/essays/the-small-web/). This site is my attempt to stir up some of that old spirit.
+
+Other things: I like old computers, breakfast diners, [Faroese doom metal](https://hamferd.bandcamp.com/album/men-gu-s-hond-er-sterk), and traveling the world with my wife.
+</details>
+
+## Trivia
+
+- What I'm up to [now](@/pages/now.md)
+- [Quotes](@/pages/quotes.md) I've taken down
+- [Places](@/pages/places.md) I've been
+- [Bands](@/pages/bands.md) I've seen
+- Tools I [use](@/pages/uses.md)

@@ -1,0 +1,9 @@
+<nav>
+    {% if current_path == "/" %}
+    {% for item in config.extra.navbar %}
+    <a href="{{ get_url(path=item.url) }}">{{ item.name }}</a>
+    {% endfor %}
+    {% else %}
+    <a href="/">← Home</a>
+    {% endif %}
+</nav>
