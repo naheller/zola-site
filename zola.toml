@@ -3,13 +3,17 @@ base_url = "https://nate.spot"
 compile_sass = false
 build_search_index = false
 
-title = "Nathan Heller"
-description = "A personal website"
+title = "Nate.spot"
+description = "The personal blog of Nathan Heller"
 
 [extra]
-navbar = [
+nav = [
+    { name = "Home", url = "/" },
     { name = "Blog", url = "/blog" },
-    { name = "Projects", url = "/projects" },
+    { name = "Pages", url = "/pages" },
     { name = "About", url = "/about" },
     { name = "Contact", url = "/contact" }
+]
+nav_footer = [
+
 ]

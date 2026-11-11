@@ -5,6 +5,8 @@ description: Some notes on the concept
 ---
 Two's Complement is a way to represent positive and negative numbers in binary. It's useful because we want a way to represent each number's inverse within a limited number of bits.
 
+<!--more-->
+
 ## The sign bit
 
 Putting aside two's complement, the "naive" way to represent a negative number is to simply use its highest order bit as a "sign" bit. That is, `0` for positive and `1` for negative. 

@@ -11,14 +11,13 @@
     --dm-bg-alt: #22292b;
     --dm-accent: #67787c;
 
-    --font-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
-    --font-serif: ui-serif, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-    --font-monospace: ui-monospace, Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "Cascadia Code", "IBM Plex Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
 }
 
 body {
     font-size: 20px;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans-serif);
     line-height: 1.6;
     max-width: 700px;
     margin: auto;
@@ -111,7 +110,7 @@ article > .date {
 .centered-blurb ul, .centered-blurb ol {
     padding-inline-start: 0;
     list-style-type: none;
-}			
+}
 
 pre, code {
     font-family: var(--font-monospace);

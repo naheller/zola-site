@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+{% for page in section.pages %}
+  <article class="blog-section-item">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <!--<time datetime="{{ page.date }}">
+        {{ page.date | date(format="%b %-d, %Y") }}
+      </time>-->
+        {% if page and page.summary %}
+        <p>{{ page.summary | safe }}</p>
+        {% else %}
+        <p>{{ page.content | striptags | truncate(length=300) | safe }}</p>
+        {% endif %}
+        <a href="{{ page.permalink }}">Read more &raquo;</a>
+    </header>
+  </article>
+{% endfor %}
+</div>
+
+{% endblock content %}

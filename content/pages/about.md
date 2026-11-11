@@ -1,5 +1,5 @@
 ---
-title: About
+title: About me
 description: A few things about me and this site
 path: about
 ---

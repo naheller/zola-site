@@ -9,6 +9,8 @@ On my way back from a trip last month, I stopped in Baltimore to catch a Conan s
 
 I've been getting into doom metal lately and Conan is a lot of fun. When asked for their favorite Conan album, one redditor [responded](https://old.reddit.com/r/doommetal/comments/1cmon4r/your_favorite_conan_record/l31zusd/): "the one with the yelling about battle." That about sums it up.
 
+<!--more-->
+
 The venue was the Metro Gallery, conveniently located near the train station. It's a small spot with merch tables on the side and a bar in the back. Unfortunately there are a set of huge columns separating the merch area from the stage, so it's hard to see anything from there.
 
 I arrived while Mares of Thrace were finishing up their set. They packed a punch for a two-piece, and vocalist Therese Lanz can growl with the best of them. I didn't really get a good feel for their sound because the area was pretty well packed and I lingered by the merch area, visually and sonically off-center. I knew right away that I'd have to move in ASAP.

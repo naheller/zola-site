@@ -1,9 +1,5 @@
 <nav>
-  {% if current_path != "/" %}
-  <a href="/">Home</a>
-  {% endif %}
-  <a href="/blog">Blog</a>
-  <a href="/pages">Pages</a>
-  <a href="/about">About</a>
-  <a href="/contact">Contact</a>
+  {% for item in config.extra.nav %}
+    <a href="{{ item.url }}">{{ item.name }}</a>
+  {% endfor %}
 </nav>

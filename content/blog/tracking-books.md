@@ -6,6 +6,8 @@ One of my favorite things about small projects is the way in which their constra
 
 With this project I had the good fortune to stumble into a solution that 1) taught me something new, and 2) leveraged each puzzle piece's natural features in a way that preserved the minimalism I was going for.
 
+<!--more-->
+
 In this case the puzzle pieces were Netlify (with its build hooks) and Google Forms (with its Apps Script platform integration).
 
 ## A book tracker
