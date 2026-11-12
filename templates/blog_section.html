@@ -2,14 +2,19 @@
 
 {% block content %}
 
+<h1>{{ section.title }}</h1>
+
+{% if section and section.description %}
+<i>{{ section.description }}</i>
+{% endif %}
+
+<hr />
+
 <div>
-{% for page in section.pages %}
+{% for page in paginator.pages %}
   <article class="blog-section-item">
     <header>
       <h1>{{ page.title }}</h1>
-      <!--<time datetime="{{ page.date }}">
-        {{ page.date | date(format="%b %-d, %Y") }}
-      </time>-->
         {% if page and page.summary %}
         <p>{{ page.summary | safe }}</p>
         {% else %}
@@ -19,6 +24,18 @@
     </header>
   </article>
 {% endfor %}
+
+<nav class="pagination">
+  <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+  <span>&nbsp;/&nbsp;</span>
+  {% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next</a>
+  {% endif %}
+  {% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">Previous</a>
+  {% endif %}
+</nav>
+
 </div>
 
 {% endblock content %}

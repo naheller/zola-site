@@ -1,7 +1,6 @@
 ---
 title: Now
 description: What I'm up to now
-path: now
 ---
 
 _As of June 1, 2026_

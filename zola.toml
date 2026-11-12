@@ -8,12 +8,7 @@ description = "The personal blog of Nathan Heller"
 
 [extra]
 nav = [
-    { name = "Home", url = "/" },
     { name = "Blog", url = "/blog" },
-    { name = "Pages", url = "/pages" },
     { name = "About", url = "/about" },
-    { name = "Contact", url = "/contact" }
-]
-nav_footer = [
-
+    { name = "Now", url = "/now" }
 ]

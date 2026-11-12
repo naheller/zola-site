@@ -3,11 +3,13 @@
 :root {
     color-scheme: light dark;
 
-    --lm-text: #CECDC3;
-    --lm-text-faded: #B7B5AC;
-    --lm-bg: #100F0F;
+    --lm-text: #100F0F;
+    --lm-text-faded: #6F6E69;
+    --lm-text-code: #FFFCF0;
+    --lm-bg: #FFFCF0;
     --lm-bg-code: #1C1B1A;
-    --lm-accent: #DA702C;
+    --lm-bg-code-inline: #F2F0E5;
+    --lm-accent: #24837B;
 
     --dm-text: #CECDC3;
     --dm-text-faded: #878580;
@@ -31,7 +33,7 @@ html {
 
 body {
     max-width: 65ch;
-    margin: auto;
+    margin: 2vw auto;
     padding: 1em;
     font-size: 1.8rem;
     font-size: calc(1.5rem + .25vw);
@@ -40,7 +42,7 @@ body {
     text-rendering: optimizeLegibility;
     line-height: 1.7;
     color: light-dark(var(--lm-text), var(--dm-text));
-    background-color: light-dark(var(--light-mode-bg), var(--dm-bg));
+    background-color: light-dark(var(--lm-bg), var(--dm-bg));
 }
 
 main {
@@ -83,11 +85,6 @@ nav a {
     color: light-dark(var(--lm-text-faded), var(--dm-text-faded));
 }
 
-nav a:hover {
-    cursor: pointer;
-    border-color: light-dark(var(--light-mode-text-alt), var(--dark-mode-text-alt));
-}
-
 nav a:not(:last-child), .tags a:not(:last-child) {
     margin-right: 0.25em;
 }
@@ -109,7 +106,7 @@ blockquote > p {
 
 pre, code {
     font-family: var(--font-mono);
-    color: light-dark(var(--lm-text), var(--dm-text));
+    color: light-dark(var(--lm-text-code), var(--dm-text));
     background-color: light-dark(var(--lm-bg-code), var(--dm-bg-code));
 }
 
@@ -123,7 +120,7 @@ pre {
 p > code {
     padding: 0 0.25em;
     color: light-dark(var(--lm-text), var(--dm-text));
-    background-color: light-dark(var(--lm-bg-code), var(--dm-bg-code));
+    background-color: light-dark(var(--lm-bg-code-inline), var(--dm-bg-code));
 }
 
 footer {
@@ -136,6 +133,15 @@ ul, ol {
 
 li::marker {
     color: light-dark(var(--lm-text-faded), var(--dm-text-faded));
+}
+
+.site-title {
+    color: light-dark(var(--lm-text), var(--dm-text));
+    margin: 0 !important;
+}
+
+.blog-section-item h1 {
+    font-size: 1.25em;
 }
 
 .blog-section-item:not(:last-child) {
