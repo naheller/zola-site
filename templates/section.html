@@ -2,32 +2,29 @@
 
 {% block content %}
 
-<h1>{{ section.title }}</h1>
-
-{% if section and section.description %}
-<i>{{ section.description }}</i>
-{% endif %}
-
-<hr />
+<div class="dot spaced">&#9679;</div>
 
 <div>
 {% for page in paginator.pages %}
   <article class="blog-section-item">
     <header>
+      <time class="small faded" datetime="{{ page.date }}">
+        {{ page.date | date(format="%b %-d, %Y") }}
+      </time>
       <h1>{{ page.title }}</h1>
-        {% if page and page.summary %}
-        <p>{{ page.summary | safe }}</p>
-        {% else %}
-        <p>{{ page.content | striptags | truncate(length=300) | safe }}</p>
-        {% endif %}
-        <a href="{{ page.permalink }}">Read more &raquo;</a>
     </header>
+    {% if page and page.summary %}
+    <p>{{ page.summary | safe }}</p>
+    {% else %}
+    <p>{{ page.content | truncate(length=300) | safe }}</p>
+    {% endif %}
+    <a href="{{ page.permalink }}" class="small faded">Read more &raquo;</a>
   </article>
 {% endfor %}
 
-<nav class="pagination">
+<nav class="pagination small faded">
   <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
-  <span>&nbsp;/&nbsp;</span>
+  <span>&nbsp;&mdash;&nbsp;</span>
   {% if paginator.next %}
     <a class="next" href="{{ paginator.next }}">Next</a>
   {% endif %}

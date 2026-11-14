@@ -14,13 +14,16 @@
     {% endif %}
   </title>
   <link rel="stylesheet" href="/styles.css">
+  {% block rss %}
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+  {% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <header>
+  <!--<header>
     {% include "navbar.html" %}
-  </header>
+  </header>-->
   <main>
   {% block content %} {% endblock content %}
   </main>

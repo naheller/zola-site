@@ -1,13 +1,15 @@
 # The URL the site will be built for
-base_url = "https://nate.spot"
+base_url = "http://159.195.125.134"
 compile_sass = false
 build_search_index = false
 
 title = "Nate.spot"
 description = "The personal blog of Nathan Heller"
+author = "Nathan Heller"
 
 [extra]
 nav = [
+    { name = "Home", url = "/" },
     { name = "Blog", url = "/blog" },
     { name = "About", url = "/about" },
     { name = "Now", url = "/now" }
