@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "http://159.195.125.134"
+base_url = "https://nate.spot"
 compile_sass = false
 build_search_index = false
 
