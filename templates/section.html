@@ -4,6 +4,14 @@
 
 <div class="dot spaced">&#9679;</div>
 
+{% if paginator.current_index == 1 %}
+<div class="section-intro">
+  <p>
+    Hey, I'm <a href="/about">Nate</a> and this is my spot.
+  </p>
+</div>
+{% endif %}
+
 <div>
 {% for page in paginator.pages %}
   <article class="blog-section-item">
@@ -18,19 +26,21 @@
     {% else %}
     <p>{{ page.content | truncate(length=300) | safe }}</p>
     {% endif %}
-    <a href="{{ page.permalink }}" class="small faded">Read more &raquo;</a>
+    <a href="{{ page.permalink }}" class="read-more-link small faded">Read more &raquo;</a>
   </article>
 {% endfor %}
 
 <nav class="pagination small faded">
-  <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
-  <span>&nbsp;&mdash;&nbsp;</span>
+  {% if paginator.current_index > 1 %}
+    <a href="/">&laquo; Latest</a>
+  {% endif %}
+  {% if paginator.next and paginator.previous %}
+  <span>/</span>
+  {% endif %}
   {% if paginator.next %}
-    <a class="next" href="{{ paginator.next }}">Next</a>
+    <a href="{{ paginator.next }}">More</a>
   {% endif %}
-  {% if paginator.previous %}
-    <a class="previous" href="{{ paginator.previous }}">Previous</a>
-  {% endif %}
+  <span>posts</span>
 </nav>
 
 </div>

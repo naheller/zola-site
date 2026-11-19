@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,30 +5,27 @@
   <meta charset="utf-8">
   <title>
     {% if page and page.title %}
-    {{ page.title }} - {{ config.title }}
+    {{ page.title }} – {{ config.title }}
     {% elif section and section.title %}
-    {{ section.title }} - {{ config.title }}
+    {{ section.title }} – {{ config.title }}
     {% else %}
     {{ config.title }}
     {% endif %}
   </title>
   <link rel="stylesheet" href="/styles.css">
   {% block rss %}
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="feed.xml", trailing_slash=false) }}">
   {% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <!--<header>
-    {% include "navbar.html" %}
-  </header>-->
   <main>
   {% block content %} {% endblock content %}
   </main>
-  <!--<footer>
-    This is the footer
-  </footer>-->
+  <footer class="small faded">
+    {% include "navbar.html" %}
+  </footer>
 </body>
 
 </html>
