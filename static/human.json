@@ -1,0 +1,18 @@
+{
+  "version": "0.1.1",
+  "url": "https://nate.spot",
+  "vouches": [
+    {
+      "url": "https://blog.jsbarretto.com",
+      "vouched_at": "2026-11-20"
+    },
+    {
+      "url": "https://sethmlarson.dev",
+      "vouched_at": "2026-11-20"
+    },
+    {
+      "url": "https://evanhahn.com",
+      "vouched_at": "2026-11-20"
+    }
+  ]
+}

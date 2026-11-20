@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+{% if page %}
+<title>{{ page.title }} – {{ config.title }}</title>
+{% else %}
+<title>{{ config.title }}</title>
+{% endif %}
+{% if section %}
+<meta name="description" content="{{ config.description }}" />
+<meta property='og:type' content="website" />
+{% elif page %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:url" content="{{ current_url | safe }}">
+<meta property='og:type' content="article" />
+{% endif %}
+{% block rss %}
+  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="feed.xml", trailing_slash=false) }}">
+{% endblock %}
+<link rel="canonical" href="{{ current_url | safe }}">
+<meta name="author" content="{{ config.author }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+<link rel="stylesheet" href="/styles.css">
+<link rel="human-json" href="/human.json">
+<!--<meta name="fediverse:creator" content="TBD">-->

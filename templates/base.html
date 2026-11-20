@@ -2,25 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>
-    {% if page and page.title %}
-    {{ page.title }} – {{ config.title }}
-    {% elif section and section.title %}
-    {{ section.title }} – {{ config.title }}
-    {% else %}
-    {{ config.title }}
-    {% endif %}
-  </title>
-  {% if section %}
-  <meta name="description" content="{{ config.description }}" />
-  {% endif %}
-  <link rel="stylesheet" href="/styles.css">
-  {% block rss %}
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="feed.xml", trailing_slash=false) }}">
-  {% endblock %}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+  {% include "meta.html" %}
 </head>
 
 <body>
