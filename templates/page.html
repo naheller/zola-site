@@ -21,17 +21,17 @@
 
 <div class="dot">&#9679;</div>
 
-{% if page and page.higher and page.lower %}
+{% if page.hidden != true %}
 <nav>
   <div class="next-previous small faded">
-    {% if page and page.higher %}
-      <a href="{{ page.higher.permalink | safe }}" title="{{ page.higher.title }}">Next</a>
+    {% if page and page.lower %}
+      <a href="{{ page.lower.permalink | safe }}" title="{{ page.lower.title }}">Previous</a>
     {% endif %}
     {% if page and page.higher and page.lower %}
     <span>/</span>
     {% endif %}
-    {% if page and page.lower %}
-      <a href="{{ page.lower.permalink | safe }}" title="{{ page.lower.title }}">Previous</a>
+    {% if page and page.higher %}
+      <a href="{{ page.higher.permalink | safe }}" title="{{ page.higher.title }}">Next</a>
     {% endif %}
     <span>post</span>
   </div>

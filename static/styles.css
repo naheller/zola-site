@@ -85,10 +85,6 @@ nav.home {
     margin-bottom: 2em;
 }
 
-nav svg {
-    width: 1.25em;
-}
-
 blockquote {
     margin: 1em 0;
     padding: 0.5em 1em;
@@ -192,12 +188,8 @@ footer {
     margin-top: 1em;
 }
 
-footer nav a:not(:last-child) {
-    margin-right: 0.15em;
-}
-
-footer a {
-    text-decoration: none;
+footer span {
+    display: block;
 }
 
 /* For bandcamp embeds */
@@ -228,9 +220,5 @@ details {
 
     .small {
         font-size: 1.5rem;
-    }
-
-    nav svg {
-        width: 1.15em;
     }
 }

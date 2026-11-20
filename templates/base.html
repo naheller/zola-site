@@ -12,6 +12,9 @@
     {{ config.title }}
     {% endif %}
   </title>
+  {% if section %}
+  <meta name="description" content="{{ config.description }}" />
+  {% endif %}
   <link rel="stylesheet" href="/styles.css">
   {% block rss %}
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="feed.xml", trailing_slash=false) }}">
@@ -23,9 +26,7 @@
   <main>
   {% block content %} {% endblock content %}
   </main>
-  <footer class="small faded">
-    {% include "navbar.html" %}
-  </footer>
+  {% include "footer.html" %}
 </body>
 
 </html>
